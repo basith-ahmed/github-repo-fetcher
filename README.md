@@ -53,15 +53,15 @@ The script will print:
 - Ensure the provided GitHub repository URL is valid.
 - The script handles both files and directories within the repository.
 
-## Differences
+## Difference
 
-**Output from request**:
+**Output using GitHub API**:
  ```
  [{'name': 'LICENSE', 'path': 'LICENSE', 'sha': 'd0fb36f09eb1ed25a5cbbb873d9523e33c9dc49f', 'size': 1069, 'url': 'https://api.github.com/repos/basith-ahmed/github-repo-fetcher/contents/LICENSE?ref=main', 'html_url': 'https://github.com/basith-ahmed/github-repo-fetcher/blob/main/LICENSE', 'git_url': 'https://api.github.com/repos/basith-ahmed/github-repo-fetcher/git/blobs/d0fb36f09eb1ed25a5cbbb873d9523e33c9dc49f', 'download_url': 'https://raw.githubusercontent.com/basith-ahmed/github-repo-fetcher/main/LICENSE', 'type': 'file', '_links': {'self': 'https://api.github.com/repos/basith-ahmed/github-repo-fetcher/contents/LICENSE?ref=main', 'git': 'https://api.github.com/repos/basith-ahmed/github-repo-fetcher/git/blobs/d0fb36f09eb1ed25a5cbbb873d9523e33c9dc49f', 'html': 'https://github.com/basith-ahmed/github-repo-fetcher/blob/main/LICENSE'}},
 {'name': 'README.md', 'path': 'README.md', 'sha': '600d67d6e4c2fd993e1f045b65ec2f219b8f2f4c', 'size': 1734, 'url': 'https://api.github.com/repos/basith-ahmed/github-repo-fetcher/contents/README.md?ref=main', 'html_url': 'https://github.com/basith-ahmed/github-repo-fetcher/blob/main/README.md', 'git_url': 'https://api.github.com/repos/basith-ahmed/github-repo-fetcher/git/blobs/600d67d6e4c2fd993e1f045b65ec2f219b8f2f4c', 'download_url': 'https://raw.githubusercontent.com/basith-ahmed/github-repo-fetcher/main/README.md', 'type': 'file', '_links': {'self': 'https://api.github.com/repos/basith-ahmed/github-repo-fetcher/contents/README.md?ref=main', 'git': 'https://api.github.com/repos/basith-ahmed/github-repo-fetcher/git/blobs/600d67d6e4c2fd993e1f045b65ec2f219b8f2f4c', 'html': 'https://github.com/basith-ahmed/github-repo-fetcher/blob/main/README.md'}},
 {'name': 'fetcher.py', 'path': 'fetcher.py', 'sha': 'ee3614273fa23e9f8860604108d8cac83e5f9921', 'size': 2601, 'url': 'https://api.github.com/repos/basith-ahmed/github-repo-fetcher/contents/fetcher.py?ref=main', 'html_url': 'https://github.com/basith-ahmed/github-repo-fetcher/blob/main/fetcher.py', 'git_url': 'https://api.github.com/repos/basith-ahmed/github-repo-fetcher/git/blobs/ee3614273fa23e9f8860604108d8cac83e5f9921', 'download_url': 'https://raw.githubusercontent.com/basith-ahmed/github-repo-fetcher/main/fetcher.py', 'type': 'file', '_links': {'self': 'https://api.github.com/repos/basith-ahmed/github-repo-fetcher/contents/fetcher.py?ref=main', 'git': 'https://api.github.com/repos/basith-ahmed/github-repo-fetcher/git/blobs/ee3614273fa23e9f8860604108d8cac83e5f9921', 'html': 'https://github.com/basith-ahmed/github-repo-fetcher/blob/main/fetcher.py'}}]
  ```
-**Output from fetcher.py**:
+**Output using fetcher.py**:
 ```
 File Structure:
 {'LICENSE': None, 'README.md': None, 'fetcher.py': None}
